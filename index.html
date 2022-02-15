@@ -12,9 +12,9 @@
   <div>
     <div>
       <div>
-        <span>Odin</span>
+        <img src="odin-lined.png"><span>Odin</span>
       </div>
-      <p>Photo by X on X</p>
+      <p>Photo by <a href="http://unsplash.com/@haliewestphoto">Halie West</a> on <a href="http://unsplash.com">Unsplash</a></p>
     </div>
   </div>
 <div>
@@ -22,28 +22,49 @@
     This a form that can be used to send your data nowhere.
   </p>
   <p>
-    Go ahead and fill it out now.
+    Go ahead and try it out now.
   </p>
 </div>
 <div>
   <form action="" method="POST">
-    <div><label for="first">First Name</label>
-      <input id="first" name="first" type="text" required/></div>
-    <div><label for="last">Last Name</label>
-      <input id="last" name="last" type="text" required/></div>
-    <div><label for="email">Email</label>
-      <input id="email"name="email"  type="email" required/></div>
-    <div><label for="phone">Phone Number</label>
-      <input id="phone" name="phone"  type="tel" required/></div>
-    <div><label for="password">Password</label>
-      <input id="password"name="password"  type="password" required/></div>
-    <div><label for="confirm">Confirm Password</label>
-      <input id="confirm" name="confirm" type="password" required/></div>
+    <fieldset>
+      <legend>This is the Form!</legend>
+      <div>
+        <label for="first">First Name</label>
+        <input id="first" name="first" type="text" required>
+        <p>* First Name is required</p>
+      </div>
+      <div>
+        <label for="last">Last Name</label>
+        <input id="last" name="last" type="text" required>
+        <p>* Last name is required</p>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input id="email"name="email"  type="email" required>
+        <p>* Enter a valid email</p>
+      </div>
+      <div>
+        <label for="phone">Phone Number</label>
+        <input id="phone" name="phone"  type="tel" required>
+        <p>* A phone number is required</p>
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input id="password"name="password"  type="password" required>
+        <p>* A password is required</p>
+      </div>
+      <div>
+        <label for="confirm">Confirm Password</label>
+        <input id="confirm" name="confirm" type="password" required>
+        <p>* Passwords must match</p>
+      </div>
+    </fieldset>
     <input type="submit" value="Create Account"/>
   </form>
 </div>
 <div>
-  <p>Already have an account? X</p>
+  <p>Already have an account? <a href="">Log In</a></p>
 </div>
 </body>
 <script src="scripts/script.js"></script>
