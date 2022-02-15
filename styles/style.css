@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Norse-Bold";
+  src: url("../Norse-Bold.otf");
+}
+
+body {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+}
+
+#left {
+	background-image: url("/plant.jpg");
+	background-size: cover;
+  color: white;
+}
+
+#logo {
+	background-color: rgba(0, 0, 0, 0.49);
+  font-family: "Norse-Bold", Courier;
+  font-size: 100px;
+}
+
+#logo img {
+	height: 100px;
+}
+
+#left a:visited, #left a:link {
+	color: white;
+}
+
+input:invalid + p {
+	color: red;
+}
+
+input:valid + p {
+	visibility: collapse;
+	margin: 0;
+	height: 0;
+}
+
